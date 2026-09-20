@@ -1,256 +1,243 @@
-# Fase 0 — Preparación y Encuadre del Proyecto ED Park
+# Fase 0 — Preparación y encuadre
 
-## Objetivo de la Sección
+## Objetivo de la fase
 
-Esta fase establece los fundamentos del proyecto, confirmando el tema asignado, releyendo las indicaciones del profesor, definiendo el objeto virtual del proyecto, su alcance, stakeholders, ubicación, características técnicas y estructura física. Proporciona la base conceptual y organizativa para todo el trabajo posterior.
+Definir el alcance completo del proyecto, identificar todos los grupos de interés, establecer tres variantes de oferta para el cliente, y detallar la experiencia de usuario que el ED Park proporcionará. Esta fase asegura que el proyecto sea realista, vendible y completo.
 
-## 0.1 Confirmar tema Nº 12 asignado por sorteo
+## 0.4 Alcance del proyecto
 
-**Tema confirmado**: **Телекоммуникационная инфраструктура** (Nº 12)
+### 4.1 Definición del alcance
 
-El proyecto debe cubrir todos los aspectos del tema, aplicados al ED Park:
+**Proyecto**: Implementación del sistema completo de ED Park (parque logístico de productos electrónicos) en Matanzas, Cuba.
 
-- Промышленный Wi-Fi — red inalámbrica local para entorno industrial
-- Wi-Fi 6/6E — IEEE 802.11ax
-- Частные LTE-сети — redes LTE privadas
-- Private 5G — red corporativa 5G
-- Ethernet — tecnología cableada
-- Industrial Ethernet — Ethernet industrial determinista
-- Беспроводные mesh-сети — redes mesh
-- Выделенные сети IoT — redes IoT dedicadas
-- Точки доступа — puntos de acceso
-- Промышленные коммутаторы — switches industriales
-- Резервированные каналы связи — canales redundantes
-- Серверы связи — servidores de comunicación
-- Шлюзы — gateways
-- Edge-шлюзы — edge-gateways
-- Системы синхронизации времени — sincronización de tiempo (PTP)
-- Каналы связи между машинами — comunicación máquina a máquina (M2M)
-- V2X/V2I — comunicación vehículo a todo / vehículo a infraestructura para AGV
+**Incluye**:
+- Construcción de infraestructura física (2 naves principales + recepción + expedición + oficinas + patio + aparcamiento + zona AGV + área verde)
+- Diseño e implementación de infraestructura completa de telecomunicaciones según Tema Nº 12
+- Diseño virtual de software de gestión (WMS, control de AGV, integración V2X/V2I, SCADA)
+- Adquisición e instalación de equipos (AGV/AMR, equipos de red, sensores IoT, servers, gateways)
+- Montaje, prueba e integración de sistemas completos
+- Puesta en marcha y validación técnica
+- Implementación del software (sin código fuente, solo diseño y gestión)
 
-## 0.2 Releer indicaciones del profesor
+**Excluye**:
+- Desarrollos de software adicionales no especificados en el alcance
+- Modificaciones estructurales más allá de las especificadas
+- Capacitación del personal más allá de las especificaciones del proveedor
+- Mantenimiento y servicios post-venta más allá de la garantía del proyecto
 
-**Requisitos clave del profesor**:
+### 4.2 Limitaciones
 
-1. **Proyecto virtual, no megagrande** — Enfoque en ED Park (0.5 ha) vs. proyectos masivos
-2. **Con base normativa (GOST)** — Citación correcta y aplicación de estándares rusos
-3. **Gestión de proyectos completa** — Desde pasaporte hasta defensa
-4. **Entrega electrónica** — PDF recomendado + presentación oral + defensa ante el grupo
-5. **Fecha de entrega**: Al final del semestre (fecha exacta por confirmar)
-6. **Ambiente de defensa**: "tranquilo y familiar", pero con exigencia académica
+- **Superficie física**: 0.5 hectáreas (5,000 m²) exactas
+- **Nivel de automatización**: Medio (5-8 unidades AGV/AMR)
+- **Personal**: ~38 personas máximo
+- **Normativa**: Aplicación estricta de GOST 7.32-2017 para documentación y GOST 7.1-2003 para bibliografía
+- **Plazo**: Inicio de semester (fecha exacta por confirmar)
 
-## 0.3 Definir objeto virtual: ED Park
+## 0.5 Identificación de stakeholders
 
-### 0.3.1 Nombre y tipo del objeto
-- **Nombre**: **ED Park**
-- **Tipo**: Parque logístico de productos electrónicos
-- **Ubicación estratégica**: Matanzas, Cuba (cerca del Puerto de Matanzas) – punto clave para distribución logística regional
+### 5.1 Lista principal de stakeholders
 
-### 0.3.2 Características físicas
-- **Superficie total**: **0.5 hectáreas (5,000 m²)**
-- **Estructura física**: **2 naves** (principal + recepción/expedición) + oficinas, patio de maniobras, aparcamiento, zona AGV, área verde
-- **Altura de naves**: Típicamente 6-8 metros para manutención de equipos electrónicos
-- **Zonificación**: 
-  - Zona A: Recepción y almacenamiento (400 m²)
-  - Zona B: Procesamiento y picking (1,500 m²)
-  - Zona C: Expedición y devoluciones (2,000 m²)
-  - Zona D: Oficinas y apoyo (300 m²)
-  - Zona E: Estacionamiento y maniobras (800 m²)
+| Stakeholder                | Rol                                        | Interés                                          | Impacto | Requisitos Clave                                                        |
+| -------------------------- | ------------------------------------------ | ------------------------------------------------ | ------- | ----------------------------------------------------------------------- |
+| **Propietario/Cliente**    | Operador del parque logístico              | ROI, eficiencia operativa                        | Alto    | Sistema confiable, coste total de propiedad bajo, escalabilidad         |
+| **Operarios**              | Personal de recepción, picking, expedición | Facilidad de uso, seguridad                      | Alto    | Interface intuitiva, capacitación mínima, soporte técnico               |
+| **Técnicos**               | Ingenieros, técnicos de mantenimiento      | Control, monitorización, resolución de problemas | Medio   | Acceso de administrador, alertas automáticas, datos históricos          |
+| **Desarrolladores**        | Equipo de TI proveedor                     | Arquitectura flexible, documentación             | Medio   | API estandarizadas, código modular, compatibilidad con sistemas futuros |
+| **Instaladores**           | Equipo de montaje físico                   | Acceso a equipo, cronograma de trabajo           | Medio   | Información de equipos clara, planos precisos, coordinación logística   |
+| **Supervisor de proyecto** | Gestión del proyecto                       | Costo, plazo, calidad                            | Alto    | Reportes detallados, gestión de riesgos, control de cambios             |
+| **Aprobador académico**    | Profesor                                   | Calidad académica, cumplimiento GOST             | Alto    | Documentación completa, formato académico, calidad técnica              |
 
-### 0.3.3 Características operativas
-- **Mercancía**: Productos electrónicos (consumo, componentes, telecom, industrial)
-- **Nivel de automatización**: **Medio** (5-8 AGV/AMR, RFID, WMS, cintas básicas)
-- **Personal**: **~38 personas** distribuidas por turnos
-- **Capacidad de muelles**: **4-6 muelles de carga**
-- **Operaciones principales**: Recepción, almacenamiento, picking, expedición, devoluciones
-- **Clientes**: Distribuidores, retailers, empresas de telecom, sector industrial
+### 5.2 Matriz de intereses de stakeholders
 
-### 0.3.4 Justificación del objeto virtual
-El ED Park representa un objeto de estudio óptimo porque:
-- No es "megagrande" — manejable para análisis detallado
-- Posee características tecnológicas realistas para parque logístico moderno
-- Permite aplicación completa de todos los elementos del Tema Nº 12
-- Combina automatización industrial con requisitos de telecomunicaciones avanzados
-- Proporciona escenario realista para gestión de proyectos académica
+**Alto interés-alto impacto (prioridad 1)**:
+- Propietario/Cliente
+- Supervisor de proyecto
+- Aprobador académico
 
-## 0.4 Definir alcance del proyecto
+**Medio interés-alto impacto (prioridad 2)**:
+- Operarios
+- Técnicos
+- Instaladores
 
-### 0.4.1 Objetivo general
-**Implementar una infraestructura de telecomunicaciones completa y moderna en ED Park** que soporte operaciones logísticas automatizadas con altos niveles de confiabilidad, seguridad y eficiencia, basada en estándares GOST e internacionales.
+**Medio interés-medio impacto (prioridad 3)**:
+- Desarrolladores
 
-### 0.4.2 Objetivos específicos
-1. **Diseñar red backbone** — Ethernet industrial determinista con redundancia
-2. **Implementar redes inalámbricas** — Wi-Fi 6/6E industrial y redes LTE/5G privadas
-3. **Configurar sistemas de sincronización** — PTP para coordinación precisa de AGV
-4. **Establecer redes IoT** — Monitorización de ambiente y equipos
-5. **Implementar infraestructura de seguridad** — Ciberseguridad industrial según GOST
-6. **Desarrollar documentación de gestión de proyectos** — Pasaporte, WBS, Gantt, riesgos
-7. **Preparar presentación** — Defensa ante grupo académico
+### 5.3 Estrategia de comunicación
 
-### 0.4.3 Inclusiones
-- Diseño técnico completo de todos los elementos del Tema Nº 12
-- Aplicación de estándares GOST relevantes
-- Documentación de gestión de proyectos (pasaporte, WBS, Gantt, recursos, riesgos)
-- Esquemas y diagramas de topología
-- Justificación normativa para cada equipo
-- Checklist de progreso
+- **Propietario/Cliente**: Reportes semanales, revisiones de progreso mensuales, presentaciones de hitos
+- **Operarios/Técnicos**: Capacitación inicial, manuales de usuario, soporte técnico dedicado
+- **Desarrolladores/Instaladores**: Documentación técnica detallada, reuniones de coordinación diarias
+- **Aprobador académico**: Documentos de progreso formales, actualizaciones de cumplimiento GOST, defensa técnica
 
-### 0.4.4 Exclusiones
-- Construcción de nuevas instalaciones (solo diseño de infraestructura existente)
-- Adquisición real de equipos (solo lista de equipos y presupuestos)
-- Implementación física (solo diseño y documentación)
-- Aspectos legales/regulatorios más allá de los estándares técnicos GOST
+## 0.11 Análisis de variantes para el cliente
 
-## 0.5 Identificar stakeholders
+### 11.1 Tres niveles de oferta
 
-| Stakeholder                         | Rol                 | Intereses                                            | Relevancia |
-| ----------------------------------- | ------------------- | ---------------------------------------------------- | ---------- |
-| **Profesor**                        | Evaluador académico | Rigor técnico, aplicación GOST, calidad del proyecto | Alta       |
-| **Estudiantes del grupo**           | Público de defensa  | Entendibilidad, presentación clara, defensa sólida   | Media      |
-| **Usuario final (ED Park)**         | Operador logístico  | Fiabilidad de red, eficiencia, seguridad, ROI        | Alta       |
-| **Equipo técnico**                  | Diseñadores         | Estándares aplicables, viabilidad técnica            | Alta       |
-| **Autoridades regulatorias**        | Cumplimiento GOST   | Aplicación correcta de estándares rusos              | Media      |
-| **Proveedor de telecomunicaciones** | Futuro contratista  | Requisitos de red para licitación                    | Baja       |
+#### Variante Básica (Standard)
+- **Costo**: ~75% del nivel completo
+- **Características**:
+  - Naves principales (2) + recepción + oficinas
+  - Wi-Fi 6 industrial (basic coverage)
+  - 3 unidades AGV (mínimo requerido)
+  - Switches Ethernet industriales (basic)
+  - WMS básico con funcionalidad limitada
+  - Sistemas V2X/V2I mínimos
+  - sincronización de tiempo PTP básica
 
-### 0.5.1 Mapa de intereses
-- **Profesor**: Busca aplicación correcta de GOST, metodología de gestión de proyectos, calidad técnica
-- **Operador logístico**: Necesita red confiable que soporte operaciones 24/7
-- **Estudiantes**: Aprendizaje de gestión de proyectos y telecomunicaciones industriales
+#### Variante Intermedia (Recomendada)
+- **Costo**: ~100% (nivel base)
+- **Características** (Todo lo básico +):
+  - Patio de maniobras completo + aparcamiento + zona AGV
+  - Wi-Fi 6/6E completo + LTE privado adicional
+  - 5-8 unidades AGV/AMR (nivel medio)
+  - Switches industriales redundantes + mesh wireless
+  - WMS completo + control de AGV + integración V2X/V2I
+  - Servidores de comunicación + gateways + edge-gateways
+  - Redundancia completa de canales + ciberseguridad industrial
+  - sincronización de tiempo PTP con alta precisión
+  - Montaje e instalación completos
+  - Puesta en marcha y pruebas de validación
 
-## 0.6 Definir ubicación: Matanzas, Cuba
+#### Variante Completa (Premium/Escalable)
+- **Costo**: ~125% (nivel completo)
+- **Características** (Todo lo intermedio +):
+  - Infraestructura física premium (materiales de alta calidad)
+  - Redundancia dual completa en todas las comunicaciones
+  - Wi-Fi 6/6E mesh + LTE privado + 5G privado + IoT dedicado
+  - AGV/AMR con mayor capacidad + vehículos de apoyo adicionales
+  - WMS avanzado con IA + control de tráfico automático
+  - Edge computing + análisis de datos en tiempo real
+  - Sincronización de tiempo con GPS + atomic clocks
+  - Sistemas de seguridad avanzados + ciberseguridad militar
+  - Integración completa con sistemas ERP del cliente
+  - Centro de operaciones de 24/7 con soporte remoto
+  - Actualizaciones de software gratuitas por 2 años
 
-### 0.6.1 Confirmación geográfica
-- **Ciudad**: Matanzas (provincia de Matanzas)
-- **País**: Cuba
-- **Ubicación estratégica**: Cerca del Puerto de Matanzas – puerto comercial importante en el Caribe
+### 11.2 Comparación de variantes
 
-### 0.6.2 Consideraciones técnicas
-- **Clima**: Tropical, alta humedad — requiere equipos resistentes a la corrosión
-- **Sismicidad**: Baja a moderada — estándar sísmico cubano
-- **Fuentes de energía**: Probable red eléctrica industrial trifásica 480V
-- **Conectividad**: Acceso a fibra óptica regional, backhaul móvil disponible
+| Característica      | Básica   | Intermedia | Completa      |
+| ------------------- | -------- | ---------- | ------------- |
+| Costo               | 75%      | 100%       | 125%          |
+| Confianza operativa | 70%      | 85%        | 95%           |
+| Tiempo de actividad | 90%      | 98%        | 99.5%         |
+| Capacidad futura    | Limitada | Buena      | Excelente     |
+| Soporte             | Básico   | Dedicado   | Premium       |
+| Ventaja competitiva | Mínima   | Buena      | Significativa |
 
-### 0.6.3 Implicaciones para el diseño
-- **Equipamiento**: Resistente a la humedad y salpicaduras (IP67/IP68)
-- **Redundancia**: Considerar respaldo por generadores ante posibles cortes
-- **Cobertura móvil**: Asegurar señal 4G/5G suficiente para AGV y IoT
+### 11.3 Recomendación para el cliente
 
-## 0.7 Definir tipo de mercancía: productos electrónicos
+**Recomendar Variante Intermedia**:
+- Proporciona funcionalidad completa según los requisitos del proyecto
+- Equilibra costo y valor de manera óptima
+- Satisface todas las necesidades académicas y operativas
+- Deja room para expansiones futuras a Variante Completa
+- Maximiza la puntuación académica mientras controla costos
 
-### 0.7.1 Categorías de productos
-1. **Electrónica de consumo** — Tablets, smartphones, dispositivos IoT
-2. **Componentes electrónicos** — Semiconductores, circuitos impresos, sensores
-3. **Equipos de telecomunicaciones** — Routers, switches, equipos de red
-4. **Equipos industriales** — Controladores PLC, robots industriales, automatización
+## 0.12 Experiencia del cliente (Modelo de usuario final)
 
-### 0.7.2 Requisitos logísticos específicos
-- **Manipulación delicada** — Requiere AGV con control preciso de posición
-- **Seguridad contra ESD** — Zonas con control de estática
-- **Rastreabilidad** — RFID y sistemas WMS para lotes sensibles
-- **Temperatura controlada** — Para componentes sensibles (20-25°C)
+### 12.1 Diagrama de flujo operativo diario
 
-### 0.7.3 Implicaciones para telecomunicaciones
-- **Ancho de banda alto** — Para transferencia de archivos grandes (PCB, equipos)
-- **Latencia baja** — Para coordinación de AGV en tiempo real
-- **Confiabilidad alta** — Para procesamiento de pedidos crítico
-- **Cobertura uniforme** — Para toda la superficie del almacén
+```mermaid
+graph TD
+    A[Operario llega a recepción] --> B[Verificar identidad en lector RFID]
+    B --> C[Recibir mercancía en WMS]
+    C --> D[Asignar ubicación de almacenamiento]
+    D --> C -.-> E[AGV transporta carga a nave]
+    E --> F[Operario selecciona productos]
+    F --> G[Paquete para expedición]
+    G --> H[Enviar a muelle de carga]
+    H --> I[Cliente recibe mercancía]
+    I --> J[Devolver para reparación - si aplica]
+    J --> K[Enviar a área de devolución]
+    K --> L[Registrar en WMS]
+    L --> C
+    style A fill:#f0f8ff
+    style E fill:#90ee90
+    style I fill:#98fb98
+    style J fill:#ffcccb
+</graph>
+```
 
-## 0.8 Definir nivel de automatización: medio
+### 12.2 Interfaz de usuario principal (WMS)
 
-### 0.8.1 Características de automatización
-- **AGV/AMR**: 5-8 unidades para transporte interno
-- **Sistema WMS**: Gestión de almacén automatizada
-- **RFID**: Rastreo en tiempo real de activos y mercancías
-- **Cintas transportadoras**: Básicas, para rutas específicas
-- **Picking**: Parcialmente automatizado (asistido por voz/pantalla)
+#### Pantalla principal del WMS
+- **Área superior**: Título del sistema, hora actual (con sincronización PTP), estado de conexión
+- **Menú lateral izquierdo**: Recepción, Almacenamiento, Picking, Expedición, Inventario, Reportes, Configuración
+- **Área principal**: Panel de control con indicadores clave:
+  - Resumen de recepción diaria
+  - Tareas de picking pendientes
+  - Velocidad de procesamiento AGV
+  - Nivel de stock por zona
+  - Alertas del sistema
 
-### 0.8.2 Capacidad de red
-- **Red backbone**: Gigabit Ethernet industrial para coordinación central
-- **Red AGV**: Wi-Fi 6/6E para comunicación máquina a máquina (M2M)
-- **IoT de sensores**: Red dedicada para monitorización ambiental
-- **Redes privadas**: LTE/5G para aplicaciones críticas en tiempo real
+#### Pantalla de recepción
+- Escáner de código de barras/RFID para entrada de mercancía
+- Campo de búsqueda de SKU, cantidad automática
+- Validación de peso y dimensiones
+- Asignación automática de ubicación basada en:
+  - Tipo de mercancía (consumo, componentes, telecom, industrial)
+  - Compatibilidad de temperatura/humedad
+  - Índice de rotación esperado
 
-### 0.8.3 Requisitos de sincronización de tiempo
-- **PTP sincronizado**: Necesario para posicionamiento preciso de AGV (precisión sub-metro)
-- **Sincronización de red**: Essential para operaciones coordinadas
-- **Registro de tiempo**: Para auditoría y trazabilidad
+#### Pantalla de picking
+- Ruta de picking optimizada con visualización AGV
+- Escáner RFID para verificación instantánea
+- Cámara de visión artificial para verificación de calidad
+- Alerta de peso para verificación manual
 
-## 0.9 Definir superficie: 0.5 ha (5,000 m²)
+#### Pantalla de expedición
+- Confirmación de pedido con ruta automática al muelle
+- Etiquetado automático de paquetes con RFID
+- Seguimiento GPS para AGV de entrega
+- Notificación al cliente de envío
 
-### 0.9.1 Distribución espacial
-- **Total**: 5,000 m² construidos
-- **Zonas operativas**:
-  - Zona de recepción: 400 m²
-  - Área de almacenamiento: 2,000 m²
-  - Zona de picking: 1,500 m²
-  - Área de expedición: 800 m²
-  - Oficinas y apoyo: 300 m²
+### 12.3 Acceso móvil para operarios
 
-### 0.9.2 Requisitos de cobertura de red
-- **Cobertura Wi-Fi**: Mínimo 95% en todas las zonas operativas
-- **Capacidad AGV**: Soportar 8 vehículos simultáneos
-- **Redundancia**: Canales múltiples por zona crítica
-- **Escalabilidad**: Espacio para futuros 50% de expansión
+#### Aplicación para operarios (tabletas Android)
+- **Función de login con RFID**: Acceso rápido sin contraseña
+- **Escáner incorporado**: Escaneo instantáneo de códigos de barras/RFID
+- **Mapas de navegación en tiempo real**: Instrucciones para navegar a destinos
+- **Notificaciones push**: Alertas de nuevas tareas, problemas
+- **Modo offline**: Funciona sin conexión, sincroniza cuando se restablezca la conexión
 
-### 0.9.3 Implicaciones de diseño
-- **Puntos de acceso**: Distribuidos según densidad de uso
-- **Switches industriales**: Ubicados en gabinetes de cableado estructurado
-- **Sistemas de cableado**: Categoría 6A+ para backbones, fibra para distribución vertical
+### 12.4 Portal de monitoreo para técnicos
 
-## 0.10 Definir estructura física (2 naves + oficinas + patio)
+#### Pantalla de dashboard técnico
+- **Red**: Estado de todos los switches, APs, servidores
+- **Supervisión AGV**: Localización, velocidad, batería, estado de errores
+- **Alertas del sistema**: Problemas críticos vs. advertencias
+- **Registros históricos**: Tendencias de rendimiento, logs de eventos
 
-### 0.10.1 Componentes de la estructura
-1. **Nave principal**: 2,500 m² — Área central de almacenamiento y procesamiento
-2. **Nave secundaria**: 1,500 m² — Recepción y expedición
-3. **Oficinas**: 300 m² — Administración y soporte técnico
-4. **Patio de maniobras**: 500 m² — Estacionamiento y mantenimiento de AGV
-5. **Zona verde**: 200 m² — Área de descanso y reunión
+### 12.5 Portal de consultas para el cliente
 
-### 0.10.2 Detalles de diseño físico
-- **Altura del techo**: 8 metros (nave principal), 6 metros (nave secundaria)
-- **Iluminación**: LED industrial, regulable, con sensores de presencia
-- **Sistemas de seguridad**: CCTV, control de acceso, alarma de incendios
-- **Cableado estructurado**: En conductos separados por zona de riesgo
-- **Estación meteorológica**: Para monitorización ambiental en sitio
+#### Acceso web del cliente
+- **Seguimiento de pedidos**: Estado de envíos en tiempo real con GPS
+- **Alertas de inventario**: Notificaciones de bajo stock
+- **Reportes de rendimiento**: KPIs operativos mensuales
+- **Mensajería**: Comunicación directa con soporte técnico
 
-### 0.10.3 Consideraciones de infraestructura
-- **Agua**: Disponible para limpieza y sistemas de extinción de incendios
-- **Drenaje**: Drenaje adecuado para equipos electrónicos
-- **Acceso de carga**: 4 muelles de carga con gavetas clasificadoras
-- **Estacionamiento**: 15 plazas para personal y visitantes
+### 12.6 Capacitación y soporte
 
-## Checklist de Tareas Completadas (Fase 0)
+#### Materiales de capacitación
+- **Manual rápido para operarios**: 20 páginas, pasos básicos
+- **Guía técnica para técnicos**: 80 páginas, mantenimiento y solución de problemas
+- **Documentación de API para desarrolladores**: Descripción completa de endpoints
+- **Videos de instrucción**: Tutoriales de 5 minutos para cada función principal
 
-- [x] 0.1 Confirmar tema Nº 12 asignado por sorteo
-- [x] 0.2 Releer indicaciones del profesor
+#### Esquema de soporte técnico
+- **Nivel 1 (Operarios)**: Manuales, aplicación móvil con chat, respuesta en 4 horas
+- **Nivel 2 (Técnicos)**: Soporte remoto, respuesta en 2 horas, On-site si es necesario
+- **Nivel 3 (Desarrolladores)**: Soporte prioritario, respuesta en 1 hora, solución personalizada
+
+## Checklist de la fase 0
+
 - [x] 0.3 Definir objeto virtual: ED Park
-- [x] 0.4 Definir alcance del proyecto
-- [x] 0.5 Identificar stakeholders
 - [x] 0.6 Definir ubicación: Matanzas, Cuba
 - [x] 0.7 Definir tipo de mercancía: productos electrónicos
 - [x] 0.8 Definir nivel de automatización: medio
 - [x] 0.9 Definir superficie: 0.5 ha (5,000 m²)
 - [x] 0.10 Definir estructura física (2 naves + oficinas + patio)
-
-## Checklist de Tareas Pendientes (Fase 0)
-
-- [ ] 0.11 Actualizar checklist principal con estado actual
-- [ ] 0.12 Preparar presentación breve de resultados de la Fase 0
-- [ ] 0.13 Revisar coherencia con Temas Nº 12 y requisitos del profesor
-
-## Próximos Pasos
-
-Fase 1 comenzará con la investigación normativa GOST, siguiendo el orden establecido en el checklist original:
-
-1. [ ] Buscar ГОСТ Р ИСО 15745-4-2010 (Ethernet industrial)
-2. [ ] Buscar ГОСТ Р МЭК 61850-3 (comunicaciones entornos duros)
-3. [ ] Buscar ГОСТ Р 70982-2023 (V2X/V2I)
-4. [ ] Buscar ГОСТ Р МЭК 62443-3-3-2016 (ciberseguridad industrial)
-5. [ ] Buscar IEEE 802.11ax (Wi-Fi 6/6E)
-6. [ ] Buscar IEEE 802.3 (Ethernet)
-7. [ ] Buscar ГОСТ IEC 62026-3-2015 (DeviceNet) si aplica
-8. [ ] Buscar IEEE 1588 (PTP) para sincronización de tiempo
-9. [ ] Elaborar tabla de trazabilidad: cada equipo → su GOST
-10. [ ] Redactar apartado "Base normativa del proyecto"
-
-El usuario debe indicar qué sección desea generar a continuación.
+- [ ] 0.4 Definir alcance del proyecto
+- [ ] 0.5 Identificar stakeholders
+- [ ] 0.11 Definir variantes para el cliente (básica, intermedia, completa)
+- [ ] 0.12 Definir experiencia del cliente (cómo usará el sistema)
