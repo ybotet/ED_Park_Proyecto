@@ -155,7 +155,6 @@ graph TD
     style E fill:#90ee90
     style I fill:#98fb98
     style J fill:#ffcccb
-</graph>
 ```
 
 ### 12.2 Interfaz de usuario principal (WMS)
