@@ -17,18 +17,18 @@
 
 ## FASE 1 — Investigación normativa (GOST y estándares)
 
-- [ ] 1.1 Buscar ГОСТ Р ИСО 15745-4-2010 (Ethernet industrial)
-- [ ] 1.2 Buscar ГОСТ Р МЭК 61850-3 (comunicaciones entornos duros)
-- [ ] 1.3 Buscar ГОСТ Р 70982-2023 (V2X/V2I)
-- [ ] 1.4 Buscar ГОСТ Р МЭК 62443-3-3-2016 (ciberseguridad industrial)
-- [ ] 1.5 Buscar IEEE 802.11ax (Wi-Fi 6/6E)
-- [ ] 1.6 Buscar IEEE 802.3 (Ethernet)
-- [ ] 1.7 Buscar ГОСТ IEC 62026-3-2015 (DeviceNet) si aplica
-- [ ] 1.8 Buscar IEEE 1588 (PTP) para sincronización de tiempo
-- [ ] 1.9 Buscar ГОСТ 7.32-2017 (formato de documentación)
-- [ ] 1.10 Buscar ГОСТ 7.1-2003 (formato de bibliografía)
-- [ ] 1.11 Elaborar tabla de trazabilidad: cada equipo → su GOST
-- [ ] 1.12 Redactar apartado "Base normativa del proyecto"
+- [x] 1.1 Buscar ГОСТ Р ИСО 15745-4-2010 (Ethernet industrial)
+- [x] 1.2 Buscar ГОСТ Р МЭК 61850-3 (comunicaciones entornos duros)
+- [x] 1.3 Buscar ГОСТ Р 70982-2023 (V2X/V2I)
+- [x] 1.4 Buscar ГОСТ Р МЭК 62443-3-3-2016 (ciberseguridad industrial)
+- [x] 1.5 Buscar IEEE 802.11ax (Wi-Fi 6/6E)
+- [x] 1.6 Buscar IEEE 802.3 (Ethernet)
+- [x] 1.7 Buscar ГОСТ IEC 62026-3-2015 (DeviceNet) si aplica
+- [x] 1.8 Buscar IEEE 1588 (PTP) para sincronización de tiempo
+- [x] 1.9 Buscar ГОСТ 7.32-2017 (formato de documentación)
+- [x] 1.10 Buscar ГОСТ 7.1-2003 (formato de bibliografía)
+- [x] 1.11 Elaborar tabla de trazabilidad: cada equipo → su GOST
+- [x] 1.12 Redactar apartado "Base normativa del proyecto"
 
 ## FASE 2 — Diseño técnico del sistema completo
 
@@ -212,13 +212,14 @@
 
 ## Progreso actual del proyecto
 
-**Total de tareas completadas**: 24/149 (16.1%)
+**Total de tareas completadas**: 25/149 (16.8%)
 
-**Fases completadas**: Fase 0 (13/13 tareas completadas)
+**Fases completadas**: Fase 0 (13/13 tareas completadas), Fase 1 (12/12 tareas completadas)
 
 **Archivos generados**:
 - ✅ `00_README.md` — Documentación general del proyecto
 - ✅ `01_Fase_0_Preparacion.md` — Documentación completa de la Fase 0
+- ✅ `02_Fase_1_Normativa.md` — Base normativa y trazabilidad del proyecto
 - ✅ `07_Checklist_Actualizado.md` — Checklist actualizado
 
 **Documentación completada**:
@@ -230,5 +231,8 @@
 - Matriz de intereses de stakeholders
 - Esquema de estrategia de comunicación
 - Recomendación de precios y beneficios
+- Base normativa completa con GOST e IEEE aplicables
+- Tabla de trazabilidad equipo → GOST
+- Formato de citación bibliográfica según ГОСТ 7.1-2003
 
-**Próximo paso recomendado**: Comenzar la FASE 1 — Investigación normativa (buscar 10+ estándares GOST e IEEE)
+**Próximo paso recomendado**: Iniciar la FASE 2 — Diseño técnico del sistema completo (infraestructura física y telecom, software y equipos)

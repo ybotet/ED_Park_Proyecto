@@ -45,14 +45,13 @@ Definir el alcance completo del proyecto, identificar todos los grupos de inter�
 | **Desarrolladores**        | Equipo de TI proveedor                     | Arquitectura flexible, documentación             | Medio   | API estandarizadas, código modular, compatibilidad con sistemas futuros |
 | **Instaladores**           | Equipo de montaje físico                   | Acceso a equipo, cronograma de trabajo           | Medio   | Información de equipos clara, planos precisos, coordinación logística   |
 | **Supervisor de proyecto** | Gestión del proyecto                       | Costo, plazo, calidad                            | Alto    | Reportes detallados, gestión de riesgos, control de cambios             |
-| **Aprobador académico**    | Profesor                                   | Calidad académica, cumplimiento GOST             | Alto    | Documentación completa, formato académico, calidad técnica              |
+
 
 ### 5.2 Matriz de intereses de stakeholders
 
 **Alto interés-alto impacto (prioridad 1)**:
 - Propietario/Cliente
 - Supervisor de proyecto
-- Aprobador académico
 
 **Medio interés-alto impacto (prioridad 2)**:
 - Operarios
@@ -67,7 +66,7 @@ Definir el alcance completo del proyecto, identificar todos los grupos de inter�
 - **Propietario/Cliente**: Reportes semanales, revisiones de progreso mensuales, presentaciones de hitos
 - **Operarios/Técnicos**: Capacitación inicial, manuales de usuario, soporte técnico dedicado
 - **Desarrolladores/Instaladores**: Documentación técnica detallada, reuniones de coordinación diarias
-- **Aprobador académico**: Documentos de progreso formales, actualizaciones de cumplimiento GOST, defensa técnica
+
 
 ## 0.11 Análisis de variantes para el cliente
 
