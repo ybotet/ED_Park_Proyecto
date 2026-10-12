@@ -41,44 +41,65 @@
 - [x] 2.1.5 Automatización: media (5-8 AGV)
 - [x] 2.1.6 Personal: ~38 personas
 - [x] 2.1.7 Estructura: 2 naves + oficinas + patio
-- [ ] 2.1.8 Redactar descripción narrativa del parque
-- [ ] 2.1.9 Describir flujos operativos diarios
-- [ ] 2.1.10 Describir la experiencia del cliente
+- [x] 2.1.8 Redactar descripción narrativa del parque
+- [x] 2.1.9 Describir flujos operativos diarios
+- [x] 2.1.10 Describir la experiencia del cliente
 
 ### 2.2 Infraestructura física
 
-- [ ] 2.2.1 Describir naves y su distribución interna
-- [ ] 2.2.2 Describir muelles de carga
-- [ ] 2.2.3 Describir patio de maniobras
-- [ ] 2.2.4 Describir zonas de almacenamiento
-- [ ] 2.2.5 Describir zonas de picking y embalaje
-- [ ] 2.2.6 Describir oficinas y sala de control
+- [x] 2.2.1 Describir naves y su distribución interna (nave principal 2,000 m² + nave recepción/expedición 1,100 m²)
+- [x] 2.2.2 Describir muelles de carga (4 posiciones hidráulicas, capacidad 6,000 kg, ampliables a 6)
+- [x] 2.2.3 Describir patio de maniobras (700 m², circulación antihoraria, radio de giro ≥ 13 m)
+- [x] 2.2.4 Describir zonas de almacenamiento (Zona A convencional, Zona B temperatura controlada, Zona C alta rotación)
+- [x] 2.2.5 Describir zonas de picking y embalaje (350 m², 8 mesas, 10 terminales WMS, 2 pórticos RFID)
+- [x] 2.2.6 Describir oficinas y sala de control (250 m², NOC, servidores rack, videovigilancia, SAI)
 
 ### 2.3 Infraestructura de telecomunicaciones
 
-- [ ] 2.3.1 Listar puntos de acceso Wi-Fi 6/6E
-- [ ] 2.3.2 Listar switches industriales (Industrial Ethernet)
-- [ ] 2.3.3 Listar gateways y Edge-gateways
-- [ ] 2.3.4 Listar servidores de comunicación
-- [ ] 2.3.5 Listar equipos V2X/V2I (RSU, OBU) para AGV
-- [ ] 2.3.6 Listar sistemas de sincronización de tiempo (PTP)
-- [ ] 2.3.7 Listar canales redundantes (LTE privado, mesh)
-- [ ] 2.3.8 Listar redes IoT dedicadas (sensores temperatura, humedad)
-- [ ] 2.3.9 Listar equipos de red para AGV (Wi-Fi 6, 5G privado)
-- [ ] 2.3.10 Justificar cada equipo con su GOST
+- [x] 2.3.1 Tecnología 1: Промышленный Wi-Fi — definición, aplicación, equipos, GOST, justificación
+- [x] 2.3.2 Tecnología 2: Wi-Fi 6/6E (IEEE 802.11ax) — 14 APs, controlador WLC, parámetros de rendimiento
+- [x] 2.3.3 Tecnología 3: Частные LTE-сети — eNodeB, módems AGV, cobertura exterior
+- [x] 2.3.4 Tecnología 4: Private 5G — gNB ×4, core UPF+AMF, módems 5G para AGV
+- [x] 2.3.5 Tecnología 5: Ethernet (IEEE 802.3) — backbone fibra OM4 10G + Cat6A S/FTP
+- [x] 2.3.6 Tecnología 6: Industrial Ethernet — jerarquía 3 niveles (núcleo/distribución/campo)
+- [x] 2.3.7 Tecnología 7: Беспроводные mesh-сети — 6 nodos mesh fijos + embarcados en AGV
+- [x] 2.3.8 Tecnología 8: Выделенные сети IoT — Zigbee, 30–40 sensores T°/HR, VLAN IoT dedicada
+- [x] 2.3.9 Tecnología 9: Точки доступа — planificación RF, 14 APs, solapamiento 20 %
+- [x] 2.3.10 Tecnología 10: Промышленные коммутаторы — 10 switches en 3 niveles jerárquicos
+- [x] 2.3.11 Tecnología 11: Резервированные каналы — RSTP + WAN dual fibra/LTE + SAI + dual radio AGV
+- [x] 2.3.12 Tecnología 12: Серверы связи — SRV-01 WMS, SRV-02 AGV/SCADA, SRV-03 backup
+- [x] 2.3.13 Tecnología 13: Шлюзы — 4 gateways (Zigbee→MQTT, RFID→TCP, Modbus→OPC-UA)
+- [x] 2.3.14 Tecnología 14: Edge-шлюзы — 4 edge gateways (IoT, AGV, seguridad OT, muelles)
+- [x] 2.3.15 Tecnología 15: PTP (IEEE 1588) — jerarquía GM→BC→TC→OC, precisión < 1 µs
+- [x] 2.3.16 Tecnología 16: M2M — MQTT v5 + OPC-UA + Modbus TCP, arquitectura publisher/subscriber
+- [x] 2.3.17 Tecnología 17: V2X/V2I — RSU ×5, OBU ×5–8, mensajes BSM/SPaT/ICA/MAP
+- [x] 2.3.18 Tabla consolidada de ~130–155 equipos telecom (27 tipos)
+- [x] 2.3.19 Diagrama de topología de red completa (Mermaid)
+- [x] 2.3.20 Esquema de cobertura Wi-Fi (14 APs en planta, Mermaid)
+- [x] 2.3.21 Esquema de redundancia (RSTP + WAN dual + SAI, Mermaid)
+- [x] 2.3.22 Esquema V2X/V2I (sequenceDiagram BSM/ICA/SPaT, Mermaid)
+- [x] 2.3.23 Esquema de sincronización PTP (GM→BC→TC→OC, Mermaid)
+- [x] 2.3.24 Tabla de parámetros de rendimiento (latencia, disponibilidad, cobertura)
+- [x] 2.3.25 Tabla de segmentación VLAN y QoS (8 VLANs con DSCP)
+- [x] 2.3.26 Tabla de ciberseguridad (ГОСТ МЭК 62443 SL 2, 9 medidas)
+- [x] 2.3.27 Referencias normativas (10 GOST + IEEE citados en formato ГОСТ 7.1-2003)
 
 ### 2.4 Software de gestión (diseño, no código)
 
-- [ ] 2.4.1 Definir WMS (Warehouse Management System)
-- [ ] 2.4.2 Definir sistema de control de AGV
-- [ ] 2.4.3 Definir sistema de integración V2X/V2I
-- [ ] 2.4.4 Definir sistema de monitoreo y control (SCADA)
-- [ ] 2.4.5 Definir módulos de integración con sistemas del cliente
-- [ ] 2.4.6 Definir interfaz de usuario (concepto)
-- [ ] 2.4.7 Definir requisitos de ciberseguridad
-- [ ] 2.4.8 Estimar equipo de desarrollo necesario
-- [ ] 2.4.9 Definir metodología de desarrollo
-- [ ] 2.4.10 Estimar plazos de desarrollo
+- [x] 2.4.1 Definir M-01 WMS (10 req. funcionales, tecnología Spring Boot/PostgreSQL, integración MQTT/REST)
+- [x] 2.4.2 Definir M-02 Control de AGV (10 req., ROS 2, latencia < 50 ms, parada emergencia < 500 ms)
+- [x] 2.4.3 Definir M-03 V2X/V2I (mensajes BSM/SPaT/ICA/MAP, latencia ICA < 5 ms)
+- [x] 2.4.4 Definir M-04 SCADA (8 req., Ignition/WinCC, OPC-UA, InfluxDB, 2,000 tags)
+- [x] 2.4.5 Definir M-05 Integración (API Gateway, OAuth 2.0, EDI, webhooks, portal cliente)
+- [x] 2.4.6 Definir M-06 UI (5 perfiles, React 18, app móvil React Native, WebSocket)
+- [x] 2.4.7 Definir ciberseguridad SL 2 (ГОСТ МЭК 62443, 10 medidas: RBAC, TLS 1.3, ECDSA, auditoría)
+- [x] 2.4.8 Estimar equipo de desarrollo (13 roles: arquitecto, backend ×3, frontend ×2, DevOps, QA ×2, seguridad, SM)
+- [x] 2.4.9 Definir metodología Scrum (sprints 2 semanas, 9 hitos, 15 meses de desarrollo)
+- [x] 2.4.10 Estimar plazos y costo (74 persona-mes, ~7,400,000 ₽, hitos MS-01 a MS-09)
+- [x] 2.4.11 Generar diagrama de arquitectura de software (Mermaid — 6 módulos + bus + datos + campo)
+- [x] 2.4.12 Generar diagrama de flujo de datos — proceso de picking (Mermaid flowchart)
+- [x] 2.4.13 Generar diagrama de flujo de datos — monitoreo SCADA (Mermaid flowchart)
+- [x] 2.4.14 Generar diagrama de integración de sistemas (Mermaid — ED Park ↔ ERP/TMS/campo)
 
 ### 2.5 Equipos (hardware)
 
@@ -212,27 +233,32 @@
 
 ## Progreso actual del proyecto
 
-**Total de tareas completadas**: 25/149 (16.8%)
+**Total de tareas completadas**: 78/170 (45.9%)
 
-**Fases completadas**: Fase 0 (13/13 tareas completadas), Fase 1 (12/12 tareas completadas)
+**Fases completadas**:
+- ✅ Fase 0 — Preparación y encuadre (13/13 tareas)
+- ✅ Fase 1 — Investigación normativa (12/12 tareas)
+- ✅ Fase 2.1 — Descripción del ED Park (10/10 tareas, archivo `03_01`)
+- ✅ Fase 2.2 — Infraestructura física (6/6 tareas, archivo `03_02`)
+- ✅ Fase 2.3 — Infraestructura de telecomunicaciones (27/27 tareas, archivo `03_03`)
+- ✅ Fase 2.4 — Software de gestión — diseño virtual (14/14 tareas, archivo `03_04`)
 
 **Archivos generados**:
 - ✅ `00_README.md` — Documentación general del proyecto
-- ✅ `01_Fase_0_Preparacion.md` — Documentación completa de la Fase 0
-- ✅ `02_Fase_1_Normativa.md` — Base normativa y trazabilidad del proyecto
+- ✅ `01_Fase_0_Preparacion.md` — Fase 0 completa
+- ✅ `02_Fase_1_Normativa.md` — Base normativa (12 GOST + IEEE)
+- ✅ `03_Fase_2_Diseno_Tecnico/03_01_Descripcion_ED_Park.md` — Descripción del objeto virtual
+- ✅ `03_Fase_2_Diseno_Tecnico/03_02_Infraestructura_Fisica.md` — Infraestructura física (5,000 m²)
+- ✅ `03_Fase_2_Diseno_Tecnico/03_03_Infraestructura_Telecom.md` — 17 tecnologías Tema Nº 12
+- ✅ `03_Fase_2_Diseno_Tecnico/03_04_Software_Gestion.md` — Diseño virtual del software (6 módulos)
 - ✅ `07_Checklist_Actualizado.md` — Checklist actualizado
 
-**Documentación completada**:
-- Definición del alcance completo del proyecto
-- Identificación completa de stakeholders
-- Tres variantes de oferta (básica, intermedia, completa)
-- Descripción detallada de la experiencia del cliente
-- Diagramas de flujo y esquemas de interfaz
-- Matriz de intereses de stakeholders
-- Esquema de estrategia de comunicación
-- Recomendación de precios y beneficios
-- Base normativa completa con GOST e IEEE aplicables
-- Tabla de trazabilidad equipo → GOST
-- Formato de citación bibliográfica según ГОСТ 7.1-2003
+**Documentación completada en Fase 2.4**:
+- 6 módulos de software: M-01 WMS, M-02 AGV, M-03 V2X/V2I, M-04 SCADA, M-05 Integración, M-06 UI
+- Equipo de 13 roles con responsabilidades y fases de actividad
+- Metodología Scrum (sprints 2 semanas, 9 hitos en 15 meses)
+- Estimación: 74 persona-mes, ~7,400,000 ₽
+- Ciberseguridad SL 2 (ГОСТ МЭК 62443, 10 medidas)
+- 4 diagramas Mermaid: arquitectura, flujo picking, flujo SCADA, integración sistemas
 
-**Próximo paso recomendado**: Iniciar la FASE 2 — Diseño técnico del sistema completo (infraestructura física y telecom, software y equipos)
+**Próximo paso recomendado**: Generar `03_05_Equipos_Hardware.md` — Lista completa de equipos hardware (AGV, carretillas, cintas, RFID, sensores, servidores, climatización) con modelos, cantidades, GOST y costo estimado.

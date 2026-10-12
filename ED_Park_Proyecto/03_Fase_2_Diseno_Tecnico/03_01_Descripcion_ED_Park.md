@@ -50,15 +50,16 @@ La estrategia del proyecto no es instalar un almacén aislado, sino crear un pun
 ### 3.2 Distribución propuesta
 
 | Área | Superficie estimada | Función principal |
-|---|---:|---|
-| Nave principal | 2,200 m² | Almacenamiento de productos electrónicos, preparación y picking |
-| Nave de recepción/expedición | 1,200 m² | Recepción, inspección, consolidación y despacho |
+|------|---------------------|-------------------|
+| Nave principal | 2,000 m² | Almacenamiento de productos electrónicos, preparación y picking |
+| Nave de recepción/expedición | 1,100 m² | Recepción, inspección, consolidación y despacho |
 | Patio de maniobras | 700 m² | Movimiento de camiones, contenedores y vehículos internos |
 | Aparcamiento | 350 m² | Estacionamiento de personal y transporte de apoyo |
 | Zona AGV/AMR | 300 m² | Movimiento de vehículos automatizados y rutas internas |
 | Oficinas administrativas | 250 m² | Dirección, logística, calidad, compras y control |
-| Área verde / servicios | 200 m² | Señalización, zonas ajardinadas y puntos de servicio |
+| Área verde / servicios | 300 m² | Señalización, zonas ajardinadas y puntos de servicio |
 | Muelles de carga | 4–6 posiciones | Recepción y expedición en carga y descarga |
+| **TOTAL** | **5,000 m²** | |
 
 ### 3.3 Distribución operativa general
 

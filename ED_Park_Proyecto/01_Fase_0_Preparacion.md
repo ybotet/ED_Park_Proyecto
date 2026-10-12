@@ -4,26 +4,31 @@
 
 Definir el alcance completo del proyecto, identificar todos los grupos de interés, establecer tres variantes de oferta para el cliente, y detallar la experiencia de usuario que el ED Park proporcionará. Esta fase asegura que el proyecto sea realista, vendible y completo.
 
+---
+
 ## 0.4 Alcance del proyecto
 
 ### 4.1 Definición del alcance
 
-**Proyecto**: Implementación del sistema completo de ED Park (parque logístico de productos electrónicos) en Matanzas, Cuba.
+**Proyecto**: Implementación del Proyecto de Automatización y Telecomunicaciones ED Park (parque logístico de productos electrónicos) en Matanzas, Cuba.
 
 **Incluye**:
-- Construcción de infraestructura física (2 naves principales + recepción + expedición + oficinas + patio + aparcamiento + zona AGV + área verde)
-- Diseño e implementación de infraestructura completa de telecomunicaciones según Tema Nº 12
-- Diseño virtual de software de gestión (WMS, control de AGV, integración V2X/V2I, SCADA)
-- Adquisición e instalación de equipos (AGV/AMR, equipos de red, sensores IoT, servers, gateways)
-- Montaje, prueba e integración de sistemas completos
-- Puesta en marcha y validación técnica
-- Implementación del software (sin código fuente, solo diseño y gestión)
+- **Diseño** de la infraestructura física (2 naves + recepción/expedición + oficinas + patio + aparcamiento + zona AGV + área verde)
+- **Diseño e implementación virtual** de la infraestructura completa de telecomunicaciones según Tema Nº 12
+- **Diseño virtual** del software de gestión (WMS, control de AGV, integración V2X/V2I, SCADA)
+- **Definición y selección** de equipos (AGV/AMR, equipos de red, sensores IoT, servidores, gateways)
+- **Planificación** del montaje, prueba e integración de sistemas completos
+- **Planificación** de la puesta en marcha y validación técnica
+- **Diseño virtual** del software (sin código fuente, solo diseño y gestión)
 
 **Excluye**:
-- Desarrollos de software adicionales no especificados en el alcance
-- Modificaciones estructurales más allá de las especificadas
-- Capacitación del personal más allá de las especificaciones del proveedor
+- Construcción real del parque (es un proyecto virtual)
+- Compra real de equipos (solo se definen y estiman costos)
+- Programación real de software (solo diseño virtual)
+- Integración real con sistemas externos del cliente
+- Certificación oficial de sistemas
 - Mantenimiento y servicios post-venta más allá de la garantía del proyecto
+- Capacitación del personal más allá de las especificaciones del proveedor
 
 ### 4.2 Limitaciones
 
@@ -31,21 +36,23 @@ Definir el alcance completo del proyecto, identificar todos los grupos de inter�
 - **Nivel de automatización**: Medio (5-8 unidades AGV/AMR)
 - **Personal**: ~38 personas máximo
 - **Normativa**: Aplicación estricta de GOST 7.32-2017 para documentación y GOST 7.1-2003 para bibliografía
-- **Plazo**: Inicio de semester (fecha exacta por confirmar)
+- **Plazo**: 18 meses
+- **Presupuesto**: 117,000,000 ₽ (variante intermedia)
+
+---
 
 ## 0.5 Identificación de stakeholders
 
 ### 5.1 Lista principal de stakeholders
 
-| Stakeholder                | Rol                                        | Interés                                          | Impacto | Requisitos Clave                                                        |
-| -------------------------- | ------------------------------------------ | ------------------------------------------------ | ------- | ----------------------------------------------------------------------- |
-| **Propietario/Cliente**    | Operador del parque logístico              | ROI, eficiencia operativa                        | Alto    | Sistema confiable, coste total de propiedad bajo, escalabilidad         |
-| **Operarios**              | Personal de recepción, picking, expedición | Facilidad de uso, seguridad                      | Alto    | Interface intuitiva, capacitación mínima, soporte técnico               |
-| **Técnicos**               | Ingenieros, técnicos de mantenimiento      | Control, monitorización, resolución de problemas | Medio   | Acceso de administrador, alertas automáticas, datos históricos          |
-| **Desarrolladores**        | Equipo de TI proveedor                     | Arquitectura flexible, documentación             | Medio   | API estandarizadas, código modular, compatibilidad con sistemas futuros |
-| **Instaladores**           | Equipo de montaje físico                   | Acceso a equipo, cronograma de trabajo           | Medio   | Información de equipos clara, planos precisos, coordinación logística   |
-| **Supervisor de proyecto** | Gestión del proyecto                       | Costo, plazo, calidad                            | Alto    | Reportes detallados, gestión de riesgos, control de cambios             |
-
+| Stakeholder | Rol | Interés | Impacto | Requisitos Clave |
+|-------------|-----|---------|---------|------------------|
+| **Propietario/Cliente** | Operador del parque logístico | ROI, eficiencia operativa | Alto | Sistema confiable, coste total de propiedad bajo, escalabilidad |
+| **Operarios** | Personal de recepción, picking, expedición | Facilidad de uso, seguridad | Alto | Interface intuitiva, capacitación mínima, soporte técnico |
+| **Técnicos** | Ingenieros, técnicos de mantenimiento | Control, monitorización, resolución de problemas | Medio | Acceso de administrador, alertas automáticas, datos históricos |
+| **Desarrolladores** | Equipo de TI proveedor | Arquitectura flexible, documentación | Medio | API estandarizadas, código modular, compatibilidad con sistemas futuros |
+| **Instaladores** | Equipo de montaje físico | Acceso a equipo, cronograma de trabajo | Medio | Información de equipos clara, planos precisos, coordinación logística |
+| **Supervisor de proyecto** | Gestión del proyecto | Costo, plazo, calidad | Alto | Reportes detallados, gestión de riesgos, control de cambios |
 
 ### 5.2 Matriz de intereses de stakeholders
 
@@ -67,24 +74,29 @@ Definir el alcance completo del proyecto, identificar todos los grupos de inter�
 - **Operarios/Técnicos**: Capacitación inicial, manuales de usuario, soporte técnico dedicado
 - **Desarrolladores/Instaladores**: Documentación técnica detallada, reuniones de coordinación diarias
 
+---
 
 ## 0.11 Análisis de variantes para el cliente
 
 ### 11.1 Tres niveles de oferta
 
 #### Variante Básica (Standard)
-- **Costo**: ~75% del nivel completo
+- **Costo base**: 67,500,000 ₽
+- **Reserva de riesgos (30%)**: 20,250,000 ₽
+- **Precio total**: 87,750,000 ₽
 - **Características**:
   - Naves principales (2) + recepción + oficinas
-  - Wi-Fi 6 industrial (basic coverage)
+  - Wi-Fi 6 industrial (cobertura básica)
   - 3 unidades AGV (mínimo requerido)
-  - Switches Ethernet industriales (basic)
+  - Switches Ethernet industriales (básicos)
   - WMS básico con funcionalidad limitada
   - Sistemas V2X/V2I mínimos
-  - sincronización de tiempo PTP básica
+  - Sincronización de tiempo PTP básica
 
 #### Variante Intermedia (Recomendada)
-- **Costo**: ~100% (nivel base)
+- **Costo base**: 90,000,000 ₽
+- **Reserva de riesgos (30%)**: 27,000,000 ₽
+- **Precio total**: 117,000,000 ₽
 - **Características** (Todo lo básico +):
   - Patio de maniobras completo + aparcamiento + zona AGV
   - Wi-Fi 6/6E completo + LTE privado adicional
@@ -93,12 +105,14 @@ Definir el alcance completo del proyecto, identificar todos los grupos de inter�
   - WMS completo + control de AGV + integración V2X/V2I
   - Servidores de comunicación + gateways + edge-gateways
   - Redundancia completa de canales + ciberseguridad industrial
-  - sincronización de tiempo PTP con alta precisión
+  - Sincronización de tiempo PTP con alta precisión
   - Montaje e instalación completos
   - Puesta en marcha y pruebas de validación
 
 #### Variante Completa (Premium/Escalable)
-- **Costo**: ~125% (nivel completo)
+- **Costo base**: 112,500,000 ₽
+- **Reserva de riesgos (30%)**: 33,750,000 ₽
+- **Precio total**: 146,250,000 ₽
 - **Características** (Todo lo intermedio +):
   - Infraestructura física premium (materiales de alta calidad)
   - Redundancia dual completa en todas las comunicaciones
@@ -109,19 +123,21 @@ Definir el alcance completo del proyecto, identificar todos los grupos de inter�
   - Sincronización de tiempo con GPS + atomic clocks
   - Sistemas de seguridad avanzados + ciberseguridad militar
   - Integración completa con sistemas ERP del cliente
-  - Centro de operaciones de 24/7 con soporte remoto
+  - Centro de operaciones 24/7 con soporte remoto
   - Actualizaciones de software gratuitas por 2 años
 
 ### 11.2 Comparación de variantes
 
-| Característica      | Básica   | Intermedia | Completa      |
-| ------------------- | -------- | ---------- | ------------- |
-| Costo               | 75%      | 100%       | 125%          |
-| Confianza operativa | 70%      | 85%        | 95%           |
-| Tiempo de actividad | 90%      | 98%        | 99.5%         |
-| Capacidad futura    | Limitada | Buena      | Excelente     |
-| Soporte             | Básico   | Dedicado   | Premium       |
-| Ventaja competitiva | Mínima   | Buena      | Significativa |
+| Característica | Básica | Intermedia | Completa |
+|----------------|--------|------------|----------|
+| Costo base | 67,500,000 ₽ | 90,000,000 ₽ | 112,500,000 ₽ |
+| Reserva (30%) | 20,250,000 ₽ | 27,000,000 ₽ | 33,750,000 ₽ |
+| **Precio total** | **87,750,000 ₽** | **117,000,000 ₽** | **146,250,000 ₽** |
+| Confianza operativa | 70% | 85% | 95% |
+| Tiempo de actividad | 90% | 98% | 99.5% |
+| Capacidad futura | Limitada | Buena | Excelente |
+| Soporte | Básico | Dedicado | Premium |
+| Ventaja competitiva | Mínima | Buena | Significativa |
 
 ### 11.3 Recomendación para el cliente
 
@@ -129,8 +145,10 @@ Definir el alcance completo del proyecto, identificar todos los grupos de inter�
 - Proporciona funcionalidad completa según los requisitos del proyecto
 - Equilibra costo y valor de manera óptima
 - Satisface todas las necesidades académicas y operativas
-- Deja room para expansiones futuras a Variante Completa
+- Deja espacio para expansiones futuras a Variante Completa
 - Maximiza la puntuación académica mientras controla costos
+
+---
 
 ## 0.12 Experiencia del cliente (Modelo de usuario final)
 
