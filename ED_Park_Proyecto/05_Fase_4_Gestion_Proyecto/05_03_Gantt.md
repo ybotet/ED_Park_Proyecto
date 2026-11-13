@@ -25,65 +25,65 @@ Definir el cronograma maestro del proyecto ED Park mediante un diagrama de Gantt
 
 ```mermaid
 gantt
-    title Proyecto ED Park - Cronograma (18 meses)
+    title Proyecto ED Park - Cronograma 18 meses
     dateFormat  YYYY-MM-DD
     axisFormat  %m/%Y
     todayMarker stroke-width:2,stroke:red
     excludes    weekends
 
     section Análisis
-    Normativa aplicable            :a1, 2026-11-02, 20d
-    Selección/adquisición suelo    :a2, 2026-11-02, 50d
-    Viabilidad técnico-económica   :a3, after a1, 30d
-    Requisitos funcionales         :a4, after a1, 20d
-    Impacto ambiental              :a5, after a1, 40d
+    Normativa            :a1, 2026-11-02, 20d
+    Suelo                :a2, 2026-11-02, 50d
+    Viabilidad           :a3, after a1, 30d
+    Requisitos           :a4, after a1, 20d
+    Impacto ambiental    :a5, after a1, 40d
 
     section Diseño
-    Arquitectónico naves           :d1, after a4 a5, 30d
-    Estructural                    :d2, after d1, 25d
-    Instalaciones                  :d3, after d1, 25d
-    Muelles y patio                :d4, after d1, 15d
-    Estanterías y almacenamiento   :d5, after d1, 15d
-    Oficinas y sala control        :d6, after d1, 15d
-    Seguridad y salud              :d7, after d2 d3, 15d
-    Licencias y permisos           :crit, d8, after d1 d7, 80d
+    Arquitectura         :d1, after a4 a5, 30d
+    Estructural          :d2, after d1, 25d
+    Instalaciones        :d3, after d1, 25d
+    Muelles/patio        :d4, after d1, 15d
+    Estanterías          :d5, after d1, 15d
+    Oficinas/control     :d6, after d1, 15d
+    Seguridad            :d7, after d2 d3, 15d
+    Licencias            :crit, d8, after d1 d7, 80d
 
     section Desarrollo
-    Adquisición estanterías        :dev1, after d5, 40d
-    Adquisición carretillas/AGV    :dev2, after d5, 50d
-    Desarrollo WMS                 :dev3, after a4, 60d
-    Red y comunicaciones           :dev4, after d3, 30d
-    Videovigilancia/accesos        :dev5, after d3, 30d
-    Mobiliario y equipamiento      :dev6, after d6, 30d
+    Estanterías          :dev1, after d5, 40d
+    Carretillas/AGV      :dev2, after d5, 50d
+    WMS                  :dev3, after a4, 60d
+    Red/comunicaciones   :dev4, after d3, 30d
+    Video/accesos        :dev5, after d3, 30d
+    Mobiliario           :dev6, after d6, 30d
 
     section Montaje
-    Cimentación y estructura       :crit, m1, after d8, 100d
-    Pavimentos y muelles           :m2, after m1, 40d
-    Instalaciones técnicas         :crit, m3, after m1, 50d
-    Estanterías y almacenamiento   :crit, m4, after m1 dev1, 30d
-    Oficinas y sala control        :m5, after m1 dev6, 30d
-    Zona carga AGV                 :m6, after m3 dev2, 20d
+    Cimentación          :crit, m1, after d8, 100d
+    Pavimentos/muelles   :m2, after m1, 40d
+    Inst. técnicas       :crit, m3, after m1, 50d
+    Estanterías montaje  :crit, m4, after m1 dev1, 30d
+    Oficinas montaje     :m5, after m1 dev6, 30d
+    Zona carga AGV       :m6, after m3 dev2, 20d
 
     section Pruebas
-    Instalaciones técnicas         :crit, p1, after m3, 20d
-    Estanterías y capacidad        :p2, after m4, 10d
-    WMS y comunicaciones           :crit, p3, after m3 dev3, 20d
-    AGV y zona carga               :p4, after m6 p3, 10d
-    Seguridad y evacuación         :p5, after m5 d7, 10d
-    Puesta en marcha en vacío      :crit, p6, after p1 p3 p4, 10d
+    Inst. técnicas       :crit, p1, after m3, 20d
+    Estanterías cap.     :p2, after m4, 10d
+    WMS/comunicac.       :crit, p3, after m3 dev3, 20d
+    AGV/zona carga       :p4, after m6 p3, 10d
+    Seguridad/evac.      :p5, after m5 d7, 10d
+    Marcha vacío         :crit, p6, after p1 p3 p4, 10d
 
     section Despliegue
-    Formación personal             :crit, dp1, after p6, 20d
-    Carga inicial mercancía        :dp2, after p6, 10d
-    Puesta en producción           :crit, milestone, dp3, after dp1 dp2, 5d
-    Entrega y cierre proyecto      :crit, milestone, dp4, after dp3, 20d
+    Formación            :crit, dp1, after p6, 20d
+    Carga inicial        :dp2, after p6, 10d
+    Producción           :crit, milestone, dp3, after dp1 dp2, 5d
+    Cierre proyecto      :crit, milestone, dp4, after dp3, 20d
 
     %% Hitos
-    M1 Terreno adquirido           :milestone, m1_ms, 2027-01-09, 0d
-    M2 Licencia concedida          :milestone, m2_ms, 2027-07-11, 0d
-    M3 Estructura terminada        :milestone, m3_ms, 2027-11-28, 0d
-    M4 Producción iniciada         :milestone, m4_ms, 2028-03-26, 0d
-    M5 Proyecto cerrado            :milestone, m5_ms, 2028-04-16, 0d
+    M1 Terreno           :milestone, m1_ms, 2027-01-09, 0d
+    M2 Licencia          :milestone, m2_ms, 2027-07-11, 0d
+    M3 Estructura        :milestone, m3_ms, 2027-11-28, 0d
+    M4 Producción        :milestone, m4_ms, 2028-03-26, 0d
+    M5 Cierre            :milestone, m5_ms, 2028-04-16, 0d
 ```
 
 ---

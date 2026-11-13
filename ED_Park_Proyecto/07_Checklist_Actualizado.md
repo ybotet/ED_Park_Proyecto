@@ -269,11 +269,11 @@
 
 ### 4.6 Análisis de variantes para el cliente
 
-- [ ] 4.6.1 Definir variante básica (solo lo esencial)
-- [ ] 4.6.2 Definir variante intermedia (recomendada)
-- [ ] 4.6.3 Definir variante completa (con expansión futura)
-- [ ] 4.6.4 Comparar costos y beneficios
-- [ ] 4.6.5 Presentar recomendación
+- [x] 4.6.1 Definir variante básica (solo lo esencial)
+- [x] 4.6.2 Definir variante intermedia (recomendada)
+- [x] 4.6.3 Definir variante completa (con expansión futura)
+- [x] 4.6.4 Comparar costos y beneficios
+- [x] 4.6.5 Presentar recomendación
 
 ## FASE 5 — Documento final del proyecto
 
@@ -333,6 +333,7 @@
 - ✅ `05_Fase_4_Gestion_Proyecto/05_04_Recursos_Presupuesto.md`
 - ✅ `05_Fase_4_Gestion_Proyecto/05_05_Riesgos.md`
 - ✅ `05_Fase_4_Gestion_Proyecto/05_06_Comunicacion_KPIs.md`
+- ✅ `05_Fase_4_Gestion_Proyecto/05_07_Analisis_Variantes.md`
 
 ### Diagramas generados en 03_06 (resumen)
 - D-01: Topología red — jerarquía 3 niveles, anillo núcleo 10G
@@ -348,7 +349,7 @@
 
 ## Progreso actual del proyecto
 
-**Total de tareas completadas**: 191/247 (77.3%)
+**Total de tareas completadas**: 196/247 (79.4%)
 
 **Fases completadas**:
 - ✅ Fase 0 — Preparación y encuadre (13/13)
@@ -360,10 +361,10 @@
 - ✅ Fase 4.3 — Recursos y presupuesto (8/8, archivo `05_04`)
 - ✅ Fase 4.4 — Riesgos (10/10, archivo `05_05`)
 - ✅ Fase 4.5 — Comunicación y seguimiento (6/6, archivo `05_06`)
+- ✅ **Fase 4.6 — Análisis de variantes (5/5, archivo `05_07`) — FASE 4 COMPLETA**
 
 **Fases pendientes**:
-- Fase 4.6 — Análisis de variantes (0/5)
 - Fase 5 — Documento final (0/15)
 - Fase 6 — Presentación y defensa (0/7)
 
-**Próximo paso recomendado**: Continuar **FASE 4** con `05_07_Analisis_Variantes.md` — definición de 3 variantes (básica, intermedia, completa), comparación costos/beneficios y recomendación al cliente.
+**Próximo paso recomendado**: Iniciar **FASE 5** con `06_01_Portada_GOST.md` — portada firmable según ГОСТ 7.32-2017, seguida de índice, introducción y compilación del documento final.
