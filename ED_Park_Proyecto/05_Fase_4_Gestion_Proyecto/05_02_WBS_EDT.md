@@ -1,4 +1,4 @@
-# 05_02 - WBS/EDT - Estructura de Desglose del Trabajo
+﻿# 05_02 - WBS/EDT - Estructura de Desglose del Trabajo
 
 ## Objetivo de la sección
 

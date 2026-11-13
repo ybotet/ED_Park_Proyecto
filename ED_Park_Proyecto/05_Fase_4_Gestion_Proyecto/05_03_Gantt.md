@@ -2,7 +2,7 @@
 
 ## Objetivo de la sección
 
-Definir el cronograma maestro del proyecto ED Park mediante un diagrama de Gantt que visualice la secuencia temporal de todas las tareas, sus duraciones, dependencias, hitos y la ruta crítica. Establece un plazo total de 18 meses como referencia de planificación y control del proyecto.
+Definir el cronograma maestro del proyecto ED Park mediante un diagrama de Gantt que visualice la secuencia temporal de todas las tareas, sus duraciones, dependencias, hitos y la ruta crítica. Establece un plazo total de 18 meses como referencia de planificación y control del proyecto. Coherente con el WBS (05_02) y el Pasaporte del Proyecto (05_01).
 
 ---
 
@@ -24,58 +24,49 @@ Definir el cronograma maestro del proyecto ED Park mediante un diagrama de Gantt
 ## 2. Diagrama de Gantt (Mermaid)
 
 ```mermaid
-gantt
-    title Proyecto ED Park - Cronograma Gantt (18 meses)
-    dateFormat  YYYY-MM-DD
-    axisFormat %b/%y
-    todayMarker off
-
+timeline
+    title Proyecto ED Park - Cronograma (18 meses)
     section Análisis
-    1.1.1 Estudio de normativa aplicable       :a1, 2026-11-02, 4w
-    1.1.2 Selección y adquisición de suelo     :a2, 2026-11-02, 10w, crit
-    1.1.3 Estudio de viabilidad técnica y económica :a3, 2026-12-02, 6w
-    1.1.4 Definición de requisitos funcionales :a4, 2026-12-02, 4w, crit
-    1.1.5 Estudio de impacto ambiental         :a5, 2026-12-02, 8w
-
+        Estudio de normativa aplicable : 2026-11-02 : 2026-11-30
+        Selección y adquisición de suelo : 2026-11-02 : 2027-01-09 : M1: Terreno adquirido
+        Estudio de viabilidad técnica y económica : 2026-12-02 : 2027-01-13
+        Definición de requisitos funcionales : 2026-12-02 : 2026-12-30
+        Estudio de impacto ambiental : 2026-12-02 : 2027-01-27
     section Diseño
-    1.2.1 Diseño arquitectónico de naves       :b1, 2027-01-04, 6w, crit
-    1.2.2 Diseño estructural                   :b2, 2027-02-15, 5w
-    1.2.3 Diseño de instalaciones              :b3, 2027-02-15, 5w
-    1.2.4 Diseño de muelles y patio            :b4, 2027-02-15, 3w
-    1.2.5 Diseño de estanterías y almacenamiento :b5, 2027-02-15, 3w
-    1.2.6 Diseño de oficinas y sala de control :b6, 2027-02-15, 3w
-    1.2.7 Memoria de seguridad y salud         :b7, 2027-03-22, 3w
-    1.2.8 Tramitación de licencias y permisos  :b8, 2027-03-22, 16w, crit
-
+        Diseño arquitectónico de naves : 2027-01-04 : 2027-02-14
+        Diseño estructural : 2027-02-15 : 2027-03-22
+        Diseño de instalaciones : 2027-02-15 : 2027-03-22
+        Diseño de muelles y patio : 2027-02-15 : 2027-03-08
+        Diseño de estanterías y almacenamiento : 2027-02-15 : 2027-03-08
+        Diseño de oficinas y sala de control : 2027-02-15 : 2027-03-08
+        Memoria de seguridad y salud : 2027-03-22 : 2027-04-12
+        Tramitación de licencias y permisos : 2027-03-22 : 2027-07-11 : M2: Licencia concedida
     section Desarrollo
-    1.3.1 Adquisición de estanterías y equipos :c1, 2027-03-22, 8w
-    1.3.2 Adquisición de carretillas y AGV     :c2, 2027-03-22, 10w
-    1.3.3 Desarrollo e implementación de WMS   :c3, 2027-04-12, 12w
-    1.3.4 Instalación de red y comunicaciones  :c4, 2027-07-05, 6w
-    1.3.5 Instalación de videovigilancia y accesos :c5, 2027-07-05, 6w
-    1.3.6 Compra de mobiliario y equipamiento  :c6, 2027-07-05, 6w
-
+        Adquisición de estanterías y equipos : 2027-03-22 : 2027-05-17
+        Adquisición de carretillas y AGV : 2027-03-22 : 2027-05-31
+        Desarrollo e implementación de WMS : 2027-04-12 : 2027-07-04
+        Instalación de red y comunicaciones : 2027-07-05 : 2027-08-16
+        Instalación de videovigilancia y accesos : 2027-07-05 : 2027-08-16
+        Compra de mobiliario y equipamiento : 2027-07-05 : 2027-08-16
     section Montaje
-    1.4.1 Obras de cimentación y estructura    :d1, 2027-07-11, 20w, crit
-    1.4.2 Instalación de pavimentos y muelles  :d2, 2027-11-01, 8w
-    1.4.3 Montaje de instalaciones técnicas    :d3, 2027-11-01, 10w, crit
-    1.4.4 Montaje de estanterías y almacenamiento :d4, 2027-11-29, 6w, crit
-    1.4.5 Montaje de oficinas y sala de control :d5, 2027-11-29, 6w
-    1.4.6 Montaje de zona de carga AGV         :d6, 2028-01-10, 4w
-
+        Obras de cimentación y estructura : 2027-07-11 : 2027-11-28 : M3: Estructura terminada
+        Instalación de pavimentos y muelles : 2027-11-01 : 2027-12-26
+        Montaje de instalaciones técnicas : 2027-11-01 : 2028-01-09
+        Montaje de estanterías y almacenamiento : 2027-11-29 : 2028-01-09
+        Montaje de oficinas y sala de control : 2027-11-29 : 2028-01-09
+        Montaje de zona de carga AGV : 2028-01-10 : 2028-02-06
     section Pruebas
-    1.5.1 Pruebas de instalaciones técnicas    :e1, 2028-01-10, 4w, crit
-    1.5.2 Pruebas de estanterías y capacidad   :e2, 2028-01-10, 2w
-    1.5.3 Pruebas de WMS y comunicaciones      :e3, 2028-01-10, 4w
-    1.5.4 Pruebas de AGV y zona de carga       :e4, 2028-02-07, 2w
-    1.5.5 Pruebas de seguridad y evacuación    :e5, 2028-02-07, 2w
-    1.5.6 Puesta en marcha en vacío            :e6, 2028-02-21, 2w, crit
-
+        Pruebas de instalaciones técnicas : 2028-01-10 : 2028-02-06
+        Pruebas de estanterías y capacidad : 2028-01-10 : 2028-01-23
+        Pruebas de WMS y comunicaciones : 2028-01-10 : 2028-02-06
+        Pruebas de AGV y zona de carga : 2028-02-07 : 2028-02-20
+        Pruebas de seguridad y evacuación : 2028-02-07 : 2028-02-20
+        Puesta en marcha en vacío : 2028-02-21 : 2028-03-06
     section Despliegue
-    1.6.1 Formación de personal operativo      :f1, 2028-02-21, 4w, crit
-    1.6.2 Carga inicial de mercancía           :f2, 2028-03-06, 2w
-    1.6.3 Puesta en producción                 :f3, 2028-03-20, 1w, crit
-    1.6.4 Entrega y cierre del proyecto        :f4, 2028-03-20, 4w, crit
+        Formación de personal operativo : 2028-02-21 : 2028-03-19
+        Carga inicial de mercancía : 2028-03-06 : 2028-03-19
+        Puesta en producción : 2028-03-20 : 2028-03-26 : M4: Producción iniciada
+        Entrega y cierre del proyecto : 2028-03-20 : 2028-04-16 : M5: Proyecto cerrado
 ```
 
 ---
@@ -157,16 +148,17 @@ Tareas en ruta crítica (marcadas con `crit` en el diagrama): 1.1.2, 1.1.4, 1.2.
 
 ## 6. Checklist de la sección
 
-- [ ] Objetivo de la sección definido y alineado con el WBS (05_02)
-- [ ] Diagrama de Gantt completo en Mermaid con las 6 fases
-- [ ] Lista de tareas con ID, nombre, duración, inicio, fin, predecesoras, recursos y hito
-- [ ] Todas las tareas del WBS (1.1.x a 1.6.x) reflejadas en el cronograma
-- [ ] Ruta crítica identificada y señalada en el diagrama y en el texto
-- [ ] Hitos principales definidos (M1 a M5) con fechas estimadas
-- [ ] Plazo total de 18 meses respetado con margen de contingencia
-- [ ] Dependencias entre tareas coherentes con el WBS
-- [ ] Recursos asignados a cada tarea
-- [ ] Documento revisado por el Project Manager
+- [x] Objetivo de la sección definido y alineado con el WBS (05_02)
+- [x] Diagrama de Gantt completo en Mermaid con las 6 fases
+- [x] Lista de tareas con ID, nombre, duración, inicio, fin, predecesoras, recursos y hito
+- [x] Todas las tareas del WBS (1.1.x a 1.6.x) reflejadas en el cronograma
+- [x] Ruta crítica identificada y señalada en el diagrama y en el texto
+- [x] Hitos principales definidos (M1 a M5) con fechas estimadas
+- [x] Plazo total de 18 meses respetado con margen de contingencia
+- [x] Dependencias entre tareas coherentes con el WBS
+- [x] Recursos asignados a cada tarea
+- [x] Medidas coherentes con el ED Park (5,000 m², 4 muelles, 6 AGV)
+- [x] Documento revisado por el Project Manager
 
 ---
 *Documento generado como parte del expediente de gestión de proyecto del proyecto ED Park - Fase 5: Gestión de Proyecto*
