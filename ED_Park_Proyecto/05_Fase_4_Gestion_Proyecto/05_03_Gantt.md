@@ -24,49 +24,66 @@ Definir el cronograma maestro del proyecto ED Park mediante un diagrama de Gantt
 ## 2. Diagrama de Gantt (Mermaid)
 
 ```mermaid
-timeline
+gantt
     title Proyecto ED Park - Cronograma (18 meses)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m/%Y
+    todayMarker stroke-width:2,stroke:red
+    excludes    weekends
+
     section Análisis
-        Estudio de normativa aplicable : 2026-11-02 : 2026-11-30
-        Selección y adquisición de suelo : 2026-11-02 : 2027-01-09 : M1: Terreno adquirido
-        Estudio de viabilidad técnica y económica : 2026-12-02 : 2027-01-13
-        Definición de requisitos funcionales : 2026-12-02 : 2026-12-30
-        Estudio de impacto ambiental : 2026-12-02 : 2027-01-27
+    1.1.1 Estudio normativa aplicable          :a1, 2026-11-02, 20d
+    1.1.2 Selección y adquisición de suelo     :a2, 2026-11-02, 50d
+    1.1.3 Estudio viabilidad técnico-económica :a3, after a1, 30d
+    1.1.4 Definición requisitos funcionales    :a4, after a1, 20d
+    1.1.5 Estudio impacto ambiental            :a5, after a1, 40d
+
     section Diseño
-        Diseño arquitectónico de naves : 2027-01-04 : 2027-02-14
-        Diseño estructural : 2027-02-15 : 2027-03-22
-        Diseño de instalaciones : 2027-02-15 : 2027-03-22
-        Diseño de muelles y patio : 2027-02-15 : 2027-03-08
-        Diseño de estanterías y almacenamiento : 2027-02-15 : 2027-03-08
-        Diseño de oficinas y sala de control : 2027-02-15 : 2027-03-08
-        Memoria de seguridad y salud : 2027-03-22 : 2027-04-12
-        Tramitación de licencias y permisos : 2027-03-22 : 2027-07-11 : M2: Licencia concedida
+    1.2.1 Diseño arquitectónico naves          :d1, after a4 a5, 30d
+    1.2.2 Diseño estructural                   :d2, after d1, 25d
+    1.2.3 Diseño instalaciones                 :d3, after d1, 25d
+    1.2.4 Diseño muelles y patio               :d4, after d1, 15d
+    1.2.5 Diseño estanterías y almacenamiento  :d5, after d1, 15d
+    1.2.6 Diseño oficinas y sala control       :d6, after d1, 15d
+    1.2.7 Memoria seguridad y salud            :d7, after d2 d3, 15d
+    1.2.8 Tramitación licencias y permisos     :crit, d8, after d1 d7, 80d
+
     section Desarrollo
-        Adquisición de estanterías y equipos : 2027-03-22 : 2027-05-17
-        Adquisición de carretillas y AGV : 2027-03-22 : 2027-05-31
-        Desarrollo e implementación de WMS : 2027-04-12 : 2027-07-04
-        Instalación de red y comunicaciones : 2027-07-05 : 2027-08-16
-        Instalación de videovigilancia y accesos : 2027-07-05 : 2027-08-16
-        Compra de mobiliario y equipamiento : 2027-07-05 : 2027-08-16
+    1.3.1 Adquisición estanterías y equipos    :dev1, after d5, 40d
+    1.3.2 Adquisición carretillas y AGV        :dev2, after d5, 50d
+    1.3.3 Desarrollo e implementación WMS      :dev3, after a4, 60d
+    1.3.4 Instalación red y comunicaciones     :dev4, after d3, 30d
+    1.3.5 Instalación videovigilancia/accesos  :dev5, after d3, 30d
+    1.3.6 Compra mobiliario y equipamiento     :dev6, after d6, 30d
+
     section Montaje
-        Obras de cimentación y estructura : 2027-07-11 : 2027-11-28 : M3: Estructura terminada
-        Instalación de pavimentos y muelles : 2027-11-01 : 2027-12-26
-        Montaje de instalaciones técnicas : 2027-11-01 : 2028-01-09
-        Montaje de estanterías y almacenamiento : 2027-11-29 : 2028-01-09
-        Montaje de oficinas y sala de control : 2027-11-29 : 2028-01-09
-        Montaje de zona de carga AGV : 2028-01-10 : 2028-02-06
+    1.4.1 Obras cimentación y estructura       :crit, m1, after d8, 100d
+    1.4.2 Instalación pavimentos y muelles     :m2, after m1, 40d
+    1.4.3 Montaje instalaciones técnicas       :crit, m3, after m1, 50d
+    1.4.4 Montaje estanterías y almacenamiento :crit, m4, after m1 dev1, 30d
+    1.4.5 Montaje oficinas y sala control      :m5, after m1 dev6, 30d
+    1.4.6 Montaje zona carga AGV               :m6, after m3 dev2, 20d
+
     section Pruebas
-        Pruebas de instalaciones técnicas : 2028-01-10 : 2028-02-06
-        Pruebas de estanterías y capacidad : 2028-01-10 : 2028-01-23
-        Pruebas de WMS y comunicaciones : 2028-01-10 : 2028-02-06
-        Pruebas de AGV y zona de carga : 2028-02-07 : 2028-02-20
-        Pruebas de seguridad y evacuación : 2028-02-07 : 2028-02-20
-        Puesta en marcha en vacío : 2028-02-21 : 2028-03-06
+    1.5.1 Pruebas instalaciones técnicas       :crit, p1, after m3, 20d
+    1.5.2 Pruebas estanterías y capacidad      :p2, after m4, 10d
+    1.5.3 Pruebas WMS y comunicaciones         :crit, p3, after m3 dev3, 20d
+    1.5.4 Pruebas AGV y zona carga             :p4, after m6 p3, 10d
+    1.5.5 Pruebas seguridad y evacuación       :p5, after m5 d7, 10d
+    1.5.6 Puesta en marcha en vacío            :crit, p6, after p1 p3 p4, 10d
+
     section Despliegue
-        Formación de personal operativo : 2028-02-21 : 2028-03-19
-        Carga inicial de mercancía : 2028-03-06 : 2028-03-19
-        Puesta en producción : 2028-03-20 : 2028-03-26 : M4: Producción iniciada
-        Entrega y cierre del proyecto : 2028-03-20 : 2028-04-16 : M5: Proyecto cerrado
+    1.6.1 Formación personal operativo         :crit, dp1, after p6, 20d
+    1.6.2 Carga inicial mercancía              :dp2, after p6, 10d
+    1.6.3 Puesta en producción                 :crit, milestone, dp3, after dp1 dp2, 5d
+    1.6.4 Entrega y cierre del proyecto        :crit, milestone, dp4, after dp3, 20d
+
+    %% Hitos
+    M1 Terreno adquirido           :milestone, m1_ms, 2027-01-09, 0d
+    M2 Licencia concedida          :milestone, m2_ms, 2027-07-11, 0d
+    M3 Estructura terminada        :milestone, m3_ms, 2027-11-28, 0d
+    M4 Producción iniciada         :milestone, m4_ms, 2028-03-26, 0d
+    M5 Proyecto cerrado            :milestone, m5_ms, 2028-04-16, 0d
 ```
 
 ---
