@@ -24,7 +24,7 @@ Definir el cronograma maestro del proyecto ED Park mediante un diagrama de Gantt
 ## 2. Diagrama de Gantt (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'gridColor': '#d0d0d0', 'lineColor': '#d0d0d0'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': {'gridColor': '#bbbbbb', 'lineColor': '#bbbbbb'}}}%%
 gantt
     title Proyecto ED Park - Cronograma 18 meses
     dateFormat  YYYY-MM-DD
