@@ -236,36 +236,36 @@
 
 ### 4.3 Recursos
 
-- [ ] 4.3.1 Estimar personal necesario por rol (técnicos, desarrolladores, instaladores, operarios)
-- [ ] 4.3.2 Estimar equipos y materiales
-- [ ] 4.3.3 Estimar presupuesto preliminar
-- [ ] 4.3.4 Calcular reserva de riesgos (20-70%)
-- [ ] 4.3.5 Definir dos precios: costo y venta
-- [ ] 4.3.6 Definir matriz RACI
-- [ ] 4.3.7 Definir plan de contratación
-- [ ] 4.3.8 Definir subcontratistas (si aplica)
+- [x] 4.3.1 Estimar personal necesario por rol (técnicos, desarrolladores, instaladores, operarios)
+- [x] 4.3.2 Estimar equipos y materiales
+- [x] 4.3.3 Estimar presupuesto preliminar
+- [x] 4.3.4 Calcular reserva de riesgos (20-70%)
+- [x] 4.3.5 Definir dos precios: costo y venta
+- [x] 4.3.6 Definir matriz RACI
+- [x] 4.3.7 Definir plan de contratación
+- [x] 4.3.8 Definir subcontratistas (si aplica)
 
 ### 4.4 Riesgos
 
-- [ ] 4.4.1 Identificar riesgos técnicos (interferencias, latencia, cobertura)
-- [ ] 4.4.2 Identificar riesgos de ciberseguridad (V2X, IoT, red)
-- [ ] 4.4.3 Identificar riesgos de plazo y presupuesto
-- [ ] 4.4.4 Identificar riesgos financieros (tipo de cambio, inflación)
-- [ ] 4.4.5 Identificar riesgos regulatorios en Cuba
-- [ ] 4.4.6 Identificar riesgos de proveedores
-- [ ] 4.4.7 Evaluar probabilidad e impacto
-- [ ] 4.4.8 Definir plan de mitigación por riesgo
-- [ ] 4.4.9 Definir planes de contingencia
-- [ ] 4.4.10 Definir matriz de riesgos
+- [x] 4.4.1 Identificar riesgos técnicos (interferencias, latencia, cobertura)
+- [x] 4.4.2 Identificar riesgos de ciberseguridad (V2X, IoT, red)
+- [x] 4.4.3 Identificar riesgos de plazo y presupuesto
+- [x] 4.4.4 Identificar riesgos financieros (tipo de cambio, inflación)
+- [x] 4.4.5 Identificar riesgos regulatorios en Cuba
+- [x] 4.4.6 Identificar riesgos de proveedores
+- [x] 4.4.7 Evaluar probabilidad e impacto
+- [x] 4.4.8 Definir plan de mitigación por riesgo
+- [x] 4.4.9 Definir planes de contingencia
+- [x] 4.4.10 Definir matriz de riesgos
 
 ### 4.5 Comunicación y seguimiento
 
-- [ ] 4.5.1 Definir plan de comunicación
-- [ ] 4.5.2 Definir KPIs de seguimiento
-- [ ] 4.5.3 Definir método de control de avance
-- [ ] 4.5.4 Definir gestión de cambios
-- [ ] 4.5.5 Definir reuniones periódicas
-- [ ] 4.5.6 Definir reportes de avance
+- [x] 4.5.1 Definir plan de comunicación
+- [x] 4.5.2 Definir KPIs de seguimiento
+- [x] 4.5.3 Definir método de control de avance
+- [x] 4.5.4 Definir gestión de cambios
+- [x] 4.5.5 Definir reuniones periódicas
+- [x] 4.5.6 Definir reportes de avance
 
 ### 4.6 Análisis de variantes para el cliente
 
@@ -330,6 +330,9 @@
 - ✅ `05_Fase_4_Gestion_Proyecto/05_01_Pasaporte_Proyecto.md`
 - ✅ `05_Fase_4_Gestion_Proyecto/05_02_WBS_EDT.md`
 - ✅ `05_Fase_4_Gestion_Proyecto/05_03_Gantt.md`
+- ✅ `05_Fase_4_Gestion_Proyecto/05_04_Recursos_Presupuesto.md`
+- ✅ `05_Fase_4_Gestion_Proyecto/05_05_Riesgos.md`
+- ✅ `05_Fase_4_Gestion_Proyecto/05_06_Comunicacion_KPIs.md`
 
 ### Diagramas generados en 03_06 (resumen)
 - D-01: Topología red — jerarquía 3 niveles, anillo núcleo 10G
@@ -345,7 +348,7 @@
 
 ## Progreso actual del proyecto
 
-**Total de tareas completadas**: 175/247 (70.9%)
+**Total de tareas completadas**: 191/247 (77.3%)
 
 **Fases completadas**:
 - ✅ Fase 0 — Preparación y encuadre (13/13)
@@ -354,13 +357,13 @@
 - ✅ **Fase 3 — Montaje e instalación COMPLETA** (44/44, archivos `04_01` a `04_03`)
 - ✅ Fase 4.1 — Pasaporte del proyecto (17/17, archivo `05_01`)
 - ✅ Fase 4.2 — Plan de implementación WBS/Gantt (8/8, archivos `05_02` y `05_03`)
+- ✅ Fase 4.3 — Recursos y presupuesto (8/8, archivo `05_04`)
+- ✅ Fase 4.4 — Riesgos (10/10, archivo `05_05`)
+- ✅ Fase 4.5 — Comunicación y seguimiento (6/6, archivo `05_06`)
 
 **Fases pendientes**:
-- Fase 4.3 — Recursos (0/8)
-- Fase 4.4 — Riesgos (0/10)
-- Fase 4.5 — Comunicación y seguimiento (0/6)
 - Fase 4.6 — Análisis de variantes (0/5)
 - Fase 5 — Documento final (0/15)
 - Fase 6 — Presentación y defensa (0/7)
 
-**Próximo paso recomendado**: Continuar **FASE 4** con `05_04_Recursos_Presupuesto.md` — estimación de personal, equipos, presupuesto y reserva de riesgos.
+**Próximo paso recomendado**: Continuar **FASE 4** con `05_07_Analisis_Variantes.md` — definición de 3 variantes (básica, intermedia, completa), comparación costos/beneficios y recomendación al cliente.
