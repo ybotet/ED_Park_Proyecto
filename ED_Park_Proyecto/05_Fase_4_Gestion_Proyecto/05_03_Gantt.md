@@ -30,6 +30,7 @@ gantt
     axisFormat  %m/%Y
     todayMarker stroke-width:2,stroke:red
     excludes    weekends
+    grid        0
 
     section Análisis
     Normativa            :a1, 2026-11-02, 20d
