@@ -32,51 +32,51 @@ gantt
     excludes    weekends
 
     section Análisis
-    1.1.1 Estudio normativa aplicable          :a1, 2026-11-02, 20d
-    1.1.2 Selección y adquisición de suelo     :a2, 2026-11-02, 50d
-    1.1.3 Estudio viabilidad técnico-económica :a3, after a1, 30d
-    1.1.4 Definición requisitos funcionales    :a4, after a1, 20d
-    1.1.5 Estudio impacto ambiental            :a5, after a1, 40d
+    Normativa aplicable            :a1, 2026-11-02, 20d
+    Selección/adquisición suelo    :a2, 2026-11-02, 50d
+    Viabilidad técnico-económica   :a3, after a1, 30d
+    Requisitos funcionales         :a4, after a1, 20d
+    Impacto ambiental              :a5, after a1, 40d
 
     section Diseño
-    1.2.1 Diseño arquitectónico naves          :d1, after a4 a5, 30d
-    1.2.2 Diseño estructural                   :d2, after d1, 25d
-    1.2.3 Diseño instalaciones                 :d3, after d1, 25d
-    1.2.4 Diseño muelles y patio               :d4, after d1, 15d
-    1.2.5 Diseño estanterías y almacenamiento  :d5, after d1, 15d
-    1.2.6 Diseño oficinas y sala control       :d6, after d1, 15d
-    1.2.7 Memoria seguridad y salud            :d7, after d2 d3, 15d
-    1.2.8 Tramitación licencias y permisos     :crit, d8, after d1 d7, 80d
+    Arquitectónico naves           :d1, after a4 a5, 30d
+    Estructural                    :d2, after d1, 25d
+    Instalaciones                  :d3, after d1, 25d
+    Muelles y patio                :d4, after d1, 15d
+    Estanterías y almacenamiento   :d5, after d1, 15d
+    Oficinas y sala control        :d6, after d1, 15d
+    Seguridad y salud              :d7, after d2 d3, 15d
+    Licencias y permisos           :crit, d8, after d1 d7, 80d
 
     section Desarrollo
-    1.3.1 Adquisición estanterías y equipos    :dev1, after d5, 40d
-    1.3.2 Adquisición carretillas y AGV        :dev2, after d5, 50d
-    1.3.3 Desarrollo e implementación WMS      :dev3, after a4, 60d
-    1.3.4 Instalación red y comunicaciones     :dev4, after d3, 30d
-    1.3.5 Instalación videovigilancia/accesos  :dev5, after d3, 30d
-    1.3.6 Compra mobiliario y equipamiento     :dev6, after d6, 30d
+    Adquisición estanterías        :dev1, after d5, 40d
+    Adquisición carretillas/AGV    :dev2, after d5, 50d
+    Desarrollo WMS                 :dev3, after a4, 60d
+    Red y comunicaciones           :dev4, after d3, 30d
+    Videovigilancia/accesos        :dev5, after d3, 30d
+    Mobiliario y equipamiento      :dev6, after d6, 30d
 
     section Montaje
-    1.4.1 Obras cimentación y estructura       :crit, m1, after d8, 100d
-    1.4.2 Instalación pavimentos y muelles     :m2, after m1, 40d
-    1.4.3 Montaje instalaciones técnicas       :crit, m3, after m1, 50d
-    1.4.4 Montaje estanterías y almacenamiento :crit, m4, after m1 dev1, 30d
-    1.4.5 Montaje oficinas y sala control      :m5, after m1 dev6, 30d
-    1.4.6 Montaje zona carga AGV               :m6, after m3 dev2, 20d
+    Cimentación y estructura       :crit, m1, after d8, 100d
+    Pavimentos y muelles           :m2, after m1, 40d
+    Instalaciones técnicas         :crit, m3, after m1, 50d
+    Estanterías y almacenamiento   :crit, m4, after m1 dev1, 30d
+    Oficinas y sala control        :m5, after m1 dev6, 30d
+    Zona carga AGV                 :m6, after m3 dev2, 20d
 
     section Pruebas
-    1.5.1 Pruebas instalaciones técnicas       :crit, p1, after m3, 20d
-    1.5.2 Pruebas estanterías y capacidad      :p2, after m4, 10d
-    1.5.3 Pruebas WMS y comunicaciones         :crit, p3, after m3 dev3, 20d
-    1.5.4 Pruebas AGV y zona carga             :p4, after m6 p3, 10d
-    1.5.5 Pruebas seguridad y evacuación       :p5, after m5 d7, 10d
-    1.5.6 Puesta en marcha en vacío            :crit, p6, after p1 p3 p4, 10d
+    Instalaciones técnicas         :crit, p1, after m3, 20d
+    Estanterías y capacidad        :p2, after m4, 10d
+    WMS y comunicaciones           :crit, p3, after m3 dev3, 20d
+    AGV y zona carga               :p4, after m6 p3, 10d
+    Seguridad y evacuación         :p5, after m5 d7, 10d
+    Puesta en marcha en vacío      :crit, p6, after p1 p3 p4, 10d
 
     section Despliegue
-    1.6.1 Formación personal operativo         :crit, dp1, after p6, 20d
-    1.6.2 Carga inicial mercancía              :dp2, after p6, 10d
-    1.6.3 Puesta en producción                 :crit, milestone, dp3, after dp1 dp2, 5d
-    1.6.4 Entrega y cierre del proyecto        :crit, milestone, dp4, after dp3, 20d
+    Formación personal             :crit, dp1, after p6, 20d
+    Carga inicial mercancía        :dp2, after p6, 10d
+    Puesta en producción           :crit, milestone, dp3, after dp1 dp2, 5d
+    Entrega y cierre proyecto      :crit, milestone, dp4, after dp3, 20d
 
     %% Hitos
     M1 Terreno adquirido           :milestone, m1_ms, 2027-01-09, 0d
