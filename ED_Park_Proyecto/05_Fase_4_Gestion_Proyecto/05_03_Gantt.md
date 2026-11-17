@@ -92,11 +92,11 @@ gantt
 
 | ID    | Nombre                                           | Duración   | Inicio     | Fin        | Predecesoras        | Recursos                              | Hito                     |
 | ----- | ------------------------------------------------ | ---------- | ---------- | ---------- | ------------------- | ------------------------------------- | ------------------------ |
-| 1.1.1 | Estudio de normativa aplicable                   | 4 semanas  | 2026-11-02 | 2026-11-30 | —                   | Arquitecto, Ingeniero legal           |                          |
-| 1.1.2 | Selección y adquisición de suelo                 | 10 semanas | 2026-11-02 | 2027-01-09 | —                   | Gestor inmobiliario, Abogado          | M1: Terreno adquirido    |
-| 1.1.3 | Estudio de viabilidad técnica y económica        | 6 semanas  | 2026-12-02 | 2027-01-13 | 1.1.1               | Consultor financiero, Ingeniero       |                          |
-| 1.1.4 | Definición de requisitos funcionales             | 4 semanas  | 2026-12-02 | 2026-12-30 | 1.1.1               | Analista funcional, Cliente           |                          |
-| 1.1.5 | Estudio de impacto ambiental                     | 8 semanas  | 2026-12-02 | 2027-01-27 | 1.1.1               | Consultor ambiental                   |                          |
+| 1.1.1 | Estudio de normativa aplicable                   | 4 semanas  | 2026-11-02 | 2026-11-30 | —                   | Arquitecto, Gestor administrativo     |                          |
+| 1.1.2 | Selección y adquisición de suelo                 | 10 semanas | 2026-11-02 | 2027-01-09 | —                   | Gestor administrativo                 | M1: Terreno adquirido    |
+| 1.1.3 | Estudio de viabilidad técnica y económica        | 6 semanas  | 2026-12-02 | 2027-01-13 | 1.1.1 | Gestor administrativo                 |                          |
+| 1.1.4 | Definición de requisitos funcionales             | 4 semanas  | 2026-12-02 | 2026-12-30 | 1.1.1 | Gestor administrativo                 |                          |
+| 1.1.5 | Estudio de impacto ambiental                     | 8 semanas  | 2026-12-02 | 2027-01-27 | 1.1.1 | Gestor administrativo                 |                          |
 | 1.2.1 | Diseño arquitectónico de naves                   | 6 semanas  | 2027-01-04 | 2027-02-14 | 1.1.4, 1.1.5        | Arquitecto                            |                          |
 | 1.2.2 | Diseño estructural                               | 5 semanas  | 2027-02-15 | 2027-03-22 | 1.2.1               | Ingeniero estructural                 |                          |
 | 1.2.3 | Diseño de instalaciones                          | 5 semanas  | 2027-02-15 | 2027-03-22 | 1.2.1               | Ingeniero de instalaciones            |                          |
@@ -122,9 +122,9 @@ gantt
 | 1.5.3 | Pruebas de WMS y comunicaciones                  | 4 semanas  | 2028-01-10 | 2028-02-06 | 1.4.3, 1.3.3        | Consultor WMS                         |                          |
 | 1.5.4 | Pruebas de AGV y zona de carga                   | 2 semanas  | 2028-02-07 | 2028-02-20 | 1.4.6, 1.5.3        | Proveedor AGV                         |                          |
 | 1.5.5 | Pruebas de seguridad y evacuación                | 2 semanas  | 2028-02-07 | 2028-02-20 | 1.4.5, 1.2.7        | Coordinador de seguridad              |                          |
-| 1.5.6 | Puesta en marcha en vacío                        | 2 semanas  | 2028-02-21 | 2028-03-06 | 1.5.1, 1.5.3, 1.5.4 | Equipo operativo                      |                          |
-| 1.6.1 | Formación de personal operativo                  | 4 semanas  | 2028-02-21 | 2028-03-19 | 1.5.6               | Formador, RRHH                        |                          |
-| 1.6.2 | Carga inicial de mercancía                       | 2 semanas  | 2028-03-06 | 2028-03-19 | 1.5.6               | Equipo operativo                      |                          |
+| 1.5.6 | Puesta en marcha en vacío                        | 2 semanas  | 2028-02-21 | 2028-03-06 | 1.5.1, 1.5.3, 1.5.4 | Formador, RRHH                        | |
+| 1.6.1 | Formación de personal operativo                  | 4 semanas  | 2028-02-21 | 2028-03-19 | 1.5.6               | Formador, RRHH                        | |
+| 1.6.2 | Carga inicial de mercancía                       | 2 semanas  | 2028-03-06 | 2028-03-19 | 1.5.6               | Formador, RRHH                        | |
 | 1.6.3 | Puesta en producción                             | 1 semana   | 2028-03-20 | 2028-03-26 | 1.6.1, 1.6.2        | Director de operaciones               | M4: Producción iniciada  |
 | 1.6.4 | Entrega y cierre del proyecto                    | 4 semanas  | 2028-03-20 | 2028-04-16 | 1.6.3               | Project Manager                       | M5: Proyecto cerrado     |
 
